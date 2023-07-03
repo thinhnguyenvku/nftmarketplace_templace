@@ -1,5 +1,6 @@
 import vector from "./VectorHIW.svg";
 import collection from "./collection.png";
+import NFTVideo from "./creatorbackground-10.jpg";
 import creatorbackground1 from "./creatorbackground-1.jpeg";
 import creatorbackground10 from "./creatorbackground-10.jpg";
 import creatorbackground11 from "./creatorbackground-11.jpg";
@@ -11,6 +12,7 @@ import creatorbackground6 from "./creatorbackground-6.jpg";
 import creatorbackground7 from "./creatorbackground-7.jpg";
 import creatorbackground8 from "./creatorbackground-8.jpg";
 import creatorbackground9 from "./creatorbackground-9.jpg";
+import earn from "./earn.png";
 import facebook from "./facebook.svg";
 import getAble from "./getable.png";
 import hero from "./hero.png";
@@ -79,6 +81,7 @@ export default {
   service4,
   logo,
   logoLight,
+  earn,
   facebook,
   telegram,
   twitter,
@@ -86,4 +89,5 @@ export default {
   vimeo,
   youtube,
   zgcmq,
+  NFTVideo,
 };

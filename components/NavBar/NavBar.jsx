@@ -1,15 +1,16 @@
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import React, { useState } from "react";
+import Link from "next/link";
 //----IMPORT ICON
-import { BsSearch } from "react-icons/bs";
-import { CgMenuRight } from "react-icons/cg";
 import { MdNotifications } from "react-icons/md";
+import { BsSearch } from "react-icons/bs";
+import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 
 //INTERNAL IMPORT
-import images from "../../img";
-import { Button } from "../components_index";
 import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
+import { Button } from "../componentsindex";
+import images from "../../img";
 
 const NavBar = () => {
   //----USESTATE COMPONNTS
@@ -77,8 +78,8 @@ const NavBar = () => {
             <Image
               src={images.logo}
               alt="NFT MARKET PLACE"
-              width={120}
-              height={120}
+              width={100}
+              height={100}
             />
           </div>
           <div className={Style.navbar_container_left_box_input}>
@@ -89,8 +90,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* END OF LEFT SECTION */}
-
+        {/* //END OF LEFT SECTION */}
         <div className={Style.navbar_container_right}>
           <div className={Style.navbar_container_right_discover}>
             {/* DISCOVER MENU */}
@@ -154,7 +154,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDEBAR COMPONENT */}
+      {/* SIDBAR CPMPONE/NT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu} />
