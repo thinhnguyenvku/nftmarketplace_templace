@@ -69,9 +69,9 @@ export const NFTMarketplaceProvider = ({ children }) => {
     const uploadToIPFS = async(file) => {
         try {
             const added = await client.add({content:file});
-            const url = `https://ipfs.infura.io/ipfs/${added.path}`;
+            const url1 = `https://ipfs.infura.io/ipfs/${added.path}`;
 
-            return url;
+            return url1;
         } catch (error) {
             console.log("Error Uploading to IPFS");
         }
